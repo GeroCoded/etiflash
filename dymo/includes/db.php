@@ -87,9 +87,4 @@ class Database {
     	return $this->mysqli;
     }
 }
-
-$_db = new Database();
-$mysqli = $_db->getDB();
-
-
 ?>

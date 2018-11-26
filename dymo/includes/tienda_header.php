@@ -1,13 +1,13 @@
 <?php 
     $path = $_SERVER['DOCUMENT_ROOT'];
-    $logo = "/DymoWeb/assets/img/dymo-transparente.png";
-    $linkInicio = "/Dymoweb/tienda/";
-    $linkInicioEtiquetas = "/Dymoweb/tienda/index.php#etiquetas";
-    $linkRibbon = "/DymoWeb/tienda/ribbon.php";
-    $linkCerrarSesion = "/Dymoweb/includes/cerrarSesion.php";
-    $linkLogin = "/Dymoweb/tienda/login.php";
-    $linkCarrito = "/Dymoweb/tienda/carrito.php";
-    $linkPedidos = "/Dymoweb/tienda/pedidos.php";
+    $logo = "/assets/img/dymo-transparente.png";
+    $linkInicio = "/tienda/";
+    $linkInicioEtiquetas = "/tienda/index.php#etiquetas";
+    $linkRibbon = "/tienda/ribbon.php";
+    $linkCerrarSesion = "/includes/cerrarSesion.php";
+    $linkLogin = "/tienda/login.php";
+    $linkCarrito = "/tienda/carrito.php";
+    $linkPedidos = "/tienda/pedidos.php";
 
 ?>
 <!-- HEADER del NAVBAR -->
