@@ -38,6 +38,9 @@ include_once  '../includes/model/queryGenerico.php';
  */
 include_once  '../includes/moneyFormat.php';
 
+// Turn on output buffering
+ob_start();
+
 
 /**
  * En nuestro caso, DataTables maneja las columnas de nuestras tablas por medio
@@ -456,5 +459,12 @@ $output = array(
 
 // Se imprime el arreglo output en formato JSON para que lo reciba DataTables.
 echo json_encode($output);
+
+//  Return the contents of the output buffer
+$htmlStr = ob_get_contents();
+// Clean (erase) the output buffer and turn off output buffering
+ob_end_clean(); 
+// Write final string to file
+file_put_contents('pedidosEcho.txt', $htmlStr);
 
 ?>
