@@ -18,6 +18,8 @@
  * @author Luis Fernando Gerónimo Carranza <luisfergeronimo@gmail.com>
  * @author Jesús Emmanuel Zetina Chevez <zcjo151173@upemor.edu.mx>
  */
+// Turn on output buffering
+ob_start();
 
 /**
  * Se requiere de la conexión a la base de datos para hacer la consulta
@@ -38,8 +40,6 @@ include_once  '../includes/model/queryGenerico.php';
  */
 include_once  '../includes/moneyFormat.php';
 
-// Turn on output buffering
-ob_start();
 
 
 /**
@@ -401,7 +401,7 @@ for ($i=0; $i < count($resArr); $i++) {
 		$resArr[$i]["fecha-de-entrega"] = "Sin entregar";
 	}
 
-	$resArr[$i]["costo"] = money_format('%i', $resArr[$i]["costo"]);
+	$resArr[$i]["costo"] = money_format_custom('%i', $resArr[$i]["costo"]);
 
 	// Se transforman los datos obtenidos de cada columna en un div que se enviará a DataTables.
  	$sub_array[] = '<div  data-id="' . $resArr[$i]["empresaID"] . '" data-column="empresa">' 	 . $resArr[$i]["empresa"]           . '</div>';

@@ -1,17 +1,15 @@
 <?php 
 /* 
-That it is an implementation of the function money_format for the 
+That it is an implementation of the function money_format_custom for the 
 platforms that do not it bear.  
 
 The function accepts to same string of format accepts for the 
 original function of the PHP.  
 
-(Sorry. my writing in English is very bad)  
-
 The function is tested using PHP 5.1.4 in Windows XP 
 and Apache WebServer. 
 */ 
-function money_format($format, $number) 
+function money_format_custom($format, $number) 
 { 
     $regex  = '/%((?:[\^!\-]|\+|\(|\=.)*)([0-9]+)?'. 
               '(?:#([0-9]+))?(?:\.([0-9]+))?([in%])/'; 
