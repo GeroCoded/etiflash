@@ -18,8 +18,7 @@
  * @author Luis Fernando Gerónimo Carranza <luisfergeronimo@gmail.com>
  * @author Jesús Emmanuel Zetina Chevez <zcjo151173@upemor.edu.mx>
  */
-// Turn on output buffering
-ob_start();
+
 
 /**
  * Se requiere de la conexión a la base de datos para hacer la consulta
@@ -459,12 +458,5 @@ $output = array(
 
 // Se imprime el arreglo output en formato JSON para que lo reciba DataTables.
 echo json_encode($output);
-
-//  Return the contents of the output buffer
-$htmlStr = ob_get_contents();
-// Clean (erase) the output buffer and turn off output buffering
-ob_end_clean(); 
-// Write final string to file
-file_put_contents('pedidosEcho.txt', $htmlStr);
 
 ?>
