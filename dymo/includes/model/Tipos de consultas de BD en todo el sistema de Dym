@@ -1,0 +1,15 @@
+Tipos de consultas de BD en todo el sistema de Dymo Web
+
+- Básicas:
+	• Crear / Insertar
+	• Leer / Consultar
+	• Modificar
+	• Eliminar
+
+- Demás:
+	Clientes && Empresas /:
+		• Fetch Data:
+			► Ver Clientes
+			► Ver detalles de clientes
+			► Eliminar Cliente
+			► Modificar cliente

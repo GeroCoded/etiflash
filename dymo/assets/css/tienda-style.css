@@ -1,0 +1,51 @@
+
+@font-face {
+    font-family: 'WorkSans-Bold';
+    src: url(../fonts/WorkSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'WorkSans-ExtraLight';
+    src: url(../fonts/WorkSans-ExtraLight.ttf);
+}
+@font-face {
+    font-family: 'WorkSans-Light';
+    src: url(../fonts/WorkSans-Light.ttf);
+}
+@font-face {
+    font-family: 'WorkSans-Medium';
+    src: url(../fonts/WorkSans-Medium.ttf);
+}
+@font-face {
+    font-family: 'WorkSans-Regular';
+    src: url(../fonts/WorkSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'WorkSans-SemiBold';
+    src: url(../fonts/WorkSans-SemiBold.ttf);
+}
+
+
+#navbarNav-productos .dropdown-menu {
+	background-color: white;
+}
+
+.dropdown-item:hover{
+    background-color: #48525B;
+    color: white;
+}
+
+.worksans-semibold{
+	font-family: 'WorkSans-SemiBold';
+}
+
+.worksans-regular{
+	font-family: 'WorkSans-Regular';
+}
+.worksans-light{
+	font-family: 'WorkSans-Light';
+}
+.worksans-medium{
+	font-family: 'WorkSans-Medium';
+}

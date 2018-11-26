@@ -1,0 +1,175 @@
+Algoritmo para llenar los formularios
+
+
+
+
+				$tablasADetallar = array(
+                    array(
+                        'tabla' => 'cliente',   
+                        'id' => null,      
+                        'llaveForanea' => null, 
+                        'select' => 'nombre, apellidoP, apellidoM, correo, telefono'
+                    ), 
+                    array(
+                        'tabla' => 'empresa',   
+                        'id' => null,      
+                        'llaveForanea' => null, 
+                        'select' => 'nombre, telefono, correo'
+                    ),
+                    array(
+                        'tabla' => 'direccion', 
+                        'id' => 'empresa', 
+                        'llaveForanea' => 'empresaID', 
+                        'select' => 'estado, municipio, codigoPostal, colonia, calle, numeroExt, numeroInt'
+                    )
+                );
+
+
+Arrays usados:
+	tablasADetallar 		<- Original
+	tablasADetallarFinal	<- Final
+	arrayHelper 			<- Helper
+	tablasDependientes 		<- Dependientes
+
+
+
+
+• Obtener el array de las Tablas A Detallar.
+
+<!-- Serán dos ciclos: 1.- Se obtienen los id de la tablas que sí están dentro del parsed, 2.- Transferencia de ID's de las tablas que no existen en el parsed
+PRIMER CICLO:
+• Checar primer array:
+	WHILE: {
+	- ¿id es === a null? 
+		SÍ:
+		-> Obtener tablasADetallar[i]['table']
+
+		-> Buscar ese nombre de tabla con un ciclo dentro de los datos parsed
+			WHILE:{
+			• ¿parsed:data-column es igual al nombre de tabla?
+				SÍ:
+				-> Obtener data-id.
+				-> Asignarle el nombre de la tabla a helperArray['tabla']
+				-> Asignarle data-id a helperArray['id']
+				-> Asignarle llaveForanea a helperArray['llaveForanea']
+				-> Asignarle select a helperArray['select']
+				-> Pushear helperArray a tablasADetallarFinal
+
+				NO:
+				-> Buscar en el siguiente Parsed
+			}
+		NO:
+		-> Almacenar tablasADetallar[i]['table'] en otro array tablasDependientes[]
+	}
+
+
+En este punto deberíamos tener el siguiente array:
+
+tablasADetallarFinal [
+	0:{
+		tabla: "cliente",
+		id: int,
+		llaveForanea: null,
+		select: 'nombre, apellidoP, apellidoM, correo, telefono'
+	},
+	1:{
+		tabla: "empresa",
+		id: int,
+		llaveForanea: null,
+		select: 'nombre, telefono, correo'
+	}
+]
+
+helperArray{
+		tabla: "empresa",
+		id: int,
+		llaveForanea: null,
+		select: 'nombre, telefono, correo'
+}
+
+tablasDepentiendes {
+	direccion(, tabla2, tabla3, ...)
+}
+
+
+
+SEGUNDO CICLO
+-> Buscar dentro del array tablasDependientes[]
+	WHILE:{
+	-> Obtener nombre de tablasDependientes[i]
+	-> Buscar ese nombre de tabla con un ciclo dentro de los datos parsed
+	• ¿parsed:data-column es igual al nombre de tabla?
+		SÍ:
+		-> Obtener data-id.
+		-> Asignarle el nombre de la tabla a helperArray['tabla']
+		-> Asignarle data-id a helperArray['id']
+		-> Asignarle llaveForanea a helperArray['llaveForanea']
+		-> Asignarle select a helperArray['select']
+		-> Pushear helperArray a tablasADetallarFinal
+
+		NO:
+		-> Buscar en el siguiente Parsed
+	}
+
+
+
+
+En este punto deberíamos tener el siguiente array:
+
+tablasADetallarFinal [
+	0:{
+		tabla: "cliente",
+		id: int,
+		llaveForanea: null,
+		select: 'nombre, apellidoP, apellidoM, correo, telefono'
+	},
+	1:{
+		tabla: "empresa",
+		id: int,
+		llaveForanea: null,
+		select: 'nombre, telefono, correo'
+	},
+	2:{
+		tabla: "direccion",
+		id: int,
+		llaveForanea: empresaID,
+		select: 'estado, municipio, codigoPostal, colonia, calle, numeroExt, numeroInt'
+	}
+]
+
+helperArray{
+		tabla: "direccion",
+		id: int,
+		llaveForanea: empresaID,
+		select: 'estado, municipio, codigoPostal, colonia, calle, numeroExt, numeroInt'
+}
+
+
+• Obtener los input en un array. Este array debe ser de la misma longitud que el array de: tablasADetallarFinal[i]
+
+
+CICLO i<tabla....length{
+
+	• tabla = tablasADetallarFinal[i][tabla]
+
+	¿tablasADetallarFinal[i][llaveForanea] es === a null?
+		SI:
+		-> where = 'id = ?'
+		NO:
+		-> where = tablasADetallarFinal[i][llaveForanea] + ' = ?'
+
+	• id = tablasADetallarFinal[i][id]
+	• select = tablasADetallarFinal[i][select]
+
+	valoresInput = obtenerDetalles(tabla, select, where, id);
+
+
+	CICLO j<inputs....length{
+		Asignar inputs[j].val() = valoresInput[j]
+		Asignar al closest form data-id = tablasADetallarFinal[i][id]
+	}
+
+}
+
+
+

@@ -1,0 +1,201 @@
+@font-face {
+    font-family: 'WorkSans-Bold';
+    src: url(../fonts/WorkSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'WorkSans-ExtraLight';
+    src: url(../fonts/WorkSans-ExtraLight.ttf);
+}
+@font-face {
+    font-family: 'WorkSans-Light';
+    src: url(../fonts/WorkSans-Light.ttf);
+}
+@font-face {
+    font-family: 'WorkSans-Medium';
+    src: url(../fonts/WorkSans-Medium.ttf);
+}
+@font-face {
+    font-family: 'WorkSans-Regular';
+    src: url(../fonts/WorkSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'WorkSans-SemiBold';
+    src: url(../fonts/WorkSans-SemiBold.ttf);
+}
+
+body{
+    background-color: #4d555e
+}
+
+a {
+    color: #fff;
+    list-style: none;
+    text-decoration: none;
+}
+
+.active-sidebar {
+    /*background-color: #2d353d !important;*/
+    background-color: white !important;
+    color: #343A40 !important;
+    border: 0;
+    font-family: 'Worksans-SemiBold' !important;
+}
+
+.nav-link{
+    border-top: 1px solid #272b30;
+    font-family: 'WorkSans-SemiBold';
+
+}
+
+.nav-link.active {
+    color:#495057;
+    background-color: #f2f2f2 !important;
+    border-color: #dee2e6 #dee2e6 #fff;
+}
+
+.nav-link.tab-link{
+    background-color: white;
+    color: black;
+
+}
+
+.nav-link.tab-link:hover{
+
+}
+
+.nav-link:hover{
+    background-color: #f2f2f2 !important;
+    color: black;
+}
+
+.list-group{
+    border:0;
+    border-radius: 0;
+
+}
+
+.list-group-item{
+    background-color: #3E4449;
+    padding-left: 30px;
+    border:0;
+    border-radius: 0;
+}
+
+.list-group-item:first-child{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.list-group-item:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.list-group-item-action{
+    color: white;
+    font-family: 'WorkSans-Light';
+}
+
+.list-group-item-action:hover{
+    background-color: #2d353d;
+    color: white;
+}
+
+#content{
+    position:relative;
+    overflow-y: scroll;
+}
+
+#over-sidebar {
+    position:relative;
+    overflow-y: scroll;
+    width: 240px;
+} 
+
+.sidebar-header-items > li > a{
+    padding: 5px 0;
+    
+}
+
+#sidebar .nav-item > a{
+    background-color: #343A40;
+    
+}
+
+
+#dismiss {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    background: #343A40;
+/*    position: absolute;
+    top: 20px;
+    right: 10px;
+*/  
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    color: white;
+}
+
+#dismiss:hover {
+    background: #fff;
+    color: #343A40;
+}
+
+#logout {
+    border-radius: 50%;
+    padding: 12px 10px 12px 10px;
+    color: white;
+    cursor: pointer;
+}
+
+#logout-div {
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+#logout:hover {
+    background: #fff;
+    color: #343A40;
+}
+
+
+table.dataTable tbody td {
+  vertical-align: top;
+}
+
+
+
+/*************************************************/
+/*************************************************/
+/*************************************************/
+/*************** SCROLLBAR SETTINGS **************/
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+    height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #343A40; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #4e5b68; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: white; 
+}
+
+

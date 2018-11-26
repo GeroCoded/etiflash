@@ -1,0 +1,43 @@
+Checar si hay productos en su carrito
+	SI:
+	Checar si hay productos del mismo tipo en su carrito -- Ya hecho
+		SI:
+		Actualizar la cantidad, el costo y las fechas -- Ya hecho
+
+		return;
+
+		NO:
+		Crear un nuevo pedido_producto del producto con el id del pedido existente (pedidoID) -- Ya hecho
+
+
+	NO:
+	Crear un nuevo pedido de carrito (estado = 1) -- Ya hecho
+	Crear un nuevo pedido_producto del producto con el id del pedido creado (primaryKey) -- Ya hecho
+
+
+
+
+
+
+//======================================================================
+// MOSTAR PEDIDOS
+//======================================================================
+
+Consultar pedidos del cliente (estado = 3)
+Checar si se obtuvieron más de 0 pedidos
+	SI:
+	Recorrer los pedidos.
+		Obtener el id del pedido
+		//Impimir el header del pedido con el id del pedido en el botón.
+
+		Consultar los pedido_producto donde el productoID del pedido sea igual (Ordenados por el codigo)
+		
+		Consultar los datos generales de esos productos (Ordenados por el código)
+
+		Recorrer los PEDIDO_PRODUCTO
+			Imprimir los productos
+
+
+
+	NO:
+	Mostrar mensaje de que no tiene pedidos

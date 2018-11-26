@@ -1,0 +1,26 @@
+Lista de cosas por hacer:
+
+
+ • Validar que la contraseña no sea mayor a varchar(60)
+ 	(Lo mismo para cada una de los input del sitio web)
+
+
+Requisitos:
+	• Inicio de Sesión  ✔
+	• CRUD Productos
+	• CRUD Pedidos
+	• CRUD Clientes 	✔ (READ,)
+	• CRUD Admin.
+	• CRUD Vendedores
+	• Registrar cuenta  ✔
+	• Realizar pedidos
+	• Solicitar cancelación de pedido
+	• Chatear con clientes y usuarios
+	• Chatear con vendedor
+	• Evaluar servicio
+	• Evaluar sitio web
+	• Ver productos
+
+
+	• Eliminar producto del carro
+	• Mensajes de error

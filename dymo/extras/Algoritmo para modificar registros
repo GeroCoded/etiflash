@@ -1,0 +1,32 @@
+
+Título de contenido = Clientes
+
+//// "Clientes".toLowerCase() -> clientes ////
+
+modificarRegistros('clientes');
+
+modificarRegistros(contenido){
+
+	// Obtener formulario
+
+
+	for(i = 0 ; i<result['tablasADetallar']; i++){
+
+		var tablaAModificar = result['tablasADetallar'][i]['tabla'];
+
+		var form = $('#modal-form form[id=form-' + tablaAModificar);
+		var datastring = form.serialize();
+
+		tablaAModificar = tablaAModificar.toLowerCase().replace(/\b[a-z]/g, function(letter) {
+    		return letter.toUpperCase();
+		});
+
+
+		ajax{
+
+	  	url: 'modificar'+tablaAModificar+'.php',
+	  	data: datastring
+
+	 	}
+	}
+}
