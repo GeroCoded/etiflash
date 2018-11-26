@@ -1141,8 +1141,27 @@ class QueryGenerico{
 	 * @param String $table String con el nombre de la tabla o vista.
 	 */
 	public function setTable($table){
-		$table = ucfirst($table);
-		$this->_table = $table;
+
+		//======================================================================
+		// CONVERSIÓN DEL NOMBRE DE LA TABLA A MAYÚSCULA (PRIMERA LETRA)
+		//======================================================================
+
+		$finalTable = '';
+
+		// Se separa el nombre de la tabla en caso de que tenga '_' separando
+		// los nombres de la tabla que deberían ir en mayúscula.
+		$table = explode('_', $table);
+
+
+		for ($i=0; $i < sizeof($table); $i++) { 
+			$finalTable .= ucfirst($table[$i]);
+
+			if($i < (sizeof($table) -1)){
+				$finalTable .= '_';
+			}
+		}
+
+		$this->_table = $finalTable;
 	}
 
 	/**
