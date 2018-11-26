@@ -1129,7 +1129,7 @@ class QueryGenerico{
 
 
 	private function _getRowsMatched($mysqliInfo){
-		preg_match_all('/(\S[^:]+): (\d+)/', $mysqliInfo, $matches); 
+		preg_match_all('/(\S[^:]+): (\d+)/', $mysqliInfo, $matches);
 		$infoArr = array_combine ($matches[1], $matches[2]);
 		return $infoArr;
 	}
@@ -1141,6 +1141,7 @@ class QueryGenerico{
 	 * @param String $table String con el nombre de la tabla o vista.
 	 */
 	public function setTable($table){
+		$table = ucfirst($table);
 		$this->_table = $table;
 	}
 

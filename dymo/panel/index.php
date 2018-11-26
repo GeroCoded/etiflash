@@ -1172,6 +1172,8 @@ function insertarRegistro(){
                 dataType:"json",
                 success: function(data) {
 
+                    console.log(data);
+
                     // Se asigna el result a una variable global
                     result = data;
 
@@ -1223,6 +1225,12 @@ function insertarRegistro(){
                     //return that data object for datatables use
                 }*/
             },
+            "drawCallback": function (settings) { 
+                console.log("DrawCallback");
+                // Here the response
+                var response = settings.json;
+                console.log(response);
+            },
             "columns": result['columnas'],
             // Opciones de lenguaje de las funciones de la tabla
             "language": {
@@ -1246,7 +1254,7 @@ function insertarRegistro(){
                 }
             },
             "initComplete": function() {
-
+                console.log("initComplete");
 
                 //======================================================================
                 // I. INSERCIÓN DE BOTONES "EXPORTAR": PASOS 1-5

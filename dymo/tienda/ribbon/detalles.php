@@ -114,7 +114,7 @@ if(isset($_GET['codigo'])){
 
 		<!-- Imagen -->
 		<div class="col-12 col-sm-4">
-			<img class="img-fluid" id="img-producto" data-column="<?php echo $GLOBALS['results']['ribbon'][0]['codigo'];?>" onerror="this.src='../../assets/img/products/img-placeholder.png'" src="/DymoWeb/assets/img/products/ribbon-<?php echo $GLOBALS['results']['ribbon'][0]['codigo']; ?>.png">
+			<img class="img-fluid" id="img-producto" data-column="<?php echo $GLOBALS['results']['ribbon'][0]['codigo'];?>" onerror="this.src='../../assets/img/products/img-placeholder.png'" src="/assets/img/products/ribbon-<?php echo $GLOBALS['results']['ribbon'][0]['codigo']; ?>.png">
 		</div>
 
 		<!-- Detalles -->
