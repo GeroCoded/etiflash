@@ -5,12 +5,21 @@
 	
 	<?php include('includes/header.php'); ?>
 
-	<section id="slideshow">
+	<section id="slideshow" style="text-align: center;">
 
 
 		<div class="slideshow-container">
 
 
+		  <div class="mySlides fade">
+		    <!--<div class="numbertext">1 / 4</div>-->
+		    <img src="images/engrapadora-st9000-slider.png" style="width:100%">
+		    <!--<div class="text">ENGRAPADORA ST-9000</div>-->
+		  </div>
+
+		  <h3 >Engrapadora Flash ST-9000</h3>
+
+<!--
 		  <div class="mySlides fade">
 		    <div class="numbertext">1 / 4</div>
 		    <img src="images/etiquetadora-azul-slide2.png" style="width:100%">
@@ -37,18 +46,18 @@
 
 
 		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		  <a class="next" onclick="plusSlides(1)">&#10095;</a>-->
 		</div>
 		<br>
 
-
+<!--
 		<div style="text-align:center">
 		  <span class="dot" onclick="currentSlide(1)"></span> 
 		  <span class="dot" onclick="currentSlide(2)"></span> 
 		  <span class="dot" onclick="currentSlide(3)"></span> 
 		  <span class="dot" onclick="currentSlide(4)"></span> 
 		</div>
-		
+	-->	
 	</section>
 
 	<br>
@@ -73,8 +82,30 @@
 			<p>Etiqueta térmica</p>
 		</div>
 		<div class="producto-circulo">
-			<a href="#plastiflechas.php"><img src="images/plastiflecha-circulo.png"></a>
+			<a href="#plastiflechas.php"><img src="images/pistola-plastiflecha-circulo.png"></a>
 			<p>Pistola de plastiflecha</p>
+		</div>
+
+		<br>
+
+		<div class="producto-circulo">
+			<a href="#etiquetas-termica.php"><img src="images/navaja-st9000-circulo.png"></a>
+			<p>Navaja ST-9000</p>
+		</div>
+		<div class="producto-circulo">
+			<a href="#plastiflechas.php"><img src="images/plastiflecha-circulo.png"></a>
+			<p>Plastiflecha fina 7mm</p>
+		</div>
+
+		<br>
+
+		<div class="producto-circulo">
+			<a href="#etiquetas-termica.php"><img src="images/agujas-st9000-circulo.png"></a>
+			<p>Agujas ST-9000</p>
+		</div>
+		<div class="producto-circulo">
+			<a href="#etiquetas-termica.php"><img src="images/plastigrapa-st9000-circulo.png"></a>
+			<p>Plastigrapa ST-9000</p>
 		</div>
 	</section>
 

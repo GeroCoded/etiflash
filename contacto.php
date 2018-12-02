@@ -7,16 +7,28 @@
     <section class="section-mapa centered">
 		<h1>Ubicación</h1>
 
-		<p class="titulo-comentario">Calz. Coyuya #199 Col. Santa Anita CD. de México, Iztacalco 08300</p><br>
+		<p class="titulo-comentario">Vicente Suárez 813, Niños Héroes, 75760 Tehuacán, Puebla.</p><br>
 
 		<article class="mapa">
 
-			<iframe id="mapa-dymo" src="https://maps.google.com/maps?q=Coyuya%20199%2C%20La%20Cruz%20Coyuya%2C%2008310%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX&t=&z=17&ie=UTF8&iwloc=&output=embed" 
+			<!--<iframe id="mapa-dymo" src="https://maps.google.com/maps?q=Coyuya%20199%2C%20La%20Cruz%20Coyuya%2C%2008310%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX&t=&z=17&ie=UTF8&iwloc=&output=embed" 
 					frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+-->
+			<iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Vicente%20Su%C3%A1rez%20813%2C%20Ni%C3%B1os%20H%C3%A9roes%2C%2075760%20Tehuac%C3%A1n%2C%20Pue.&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
 
 		</article>
 	</section>
-
+<!--
+	<div class="mapouter">
+		<div class="gmap_canvas">
+			<iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Vicente%20Su%C3%A1rez%20813%2C%20Ni%C3%B1os%20H%C3%A9roes%2C%2075760%20Tehuac%C3%A1n%2C%20Pue.&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+				
+			</iframe>
+			<a href="https://www.embedgooglemap.net"></a>
+		</div>
+		<style>.mapouter{text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style>
+	</div>
+-->
 	<section class="centered row">
 		<section id="section-form-contacto" class="col-7">
 			<h1>Contáctanos</h1>
@@ -51,7 +63,7 @@
 
 			<article class="mapa">
 
-				<h2>Etitex</h2>
+				<h2>DYMO</h2>
 				<p class="titulo-comentario">Calz. Coyuya #199 Col. Santa Anita CD. de México, Iztacalco 08300</p> <br>
 
 				<iframe class="mapa-otras-sucursales" src="https://maps.google.com/maps?q=Coyuya%20199%2C%20La%20Cruz%20Coyuya%2C%2008310%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX&t=&z=17&ie=UTF8&iwloc=&output=embed" 

@@ -1,7 +1,7 @@
 <header>
 	<div id="post-header">
 		<div id="logo">
-			<a href="index.php"><img id="dymosa-logo-trans" src="images/etiflash.jpg" alt="logo" style="width: auto; height: 45px; margin-top: 3px;"></a>
+			<a href="index.php"><img id="etiflash-logo-trans" src="images/etiflash-logo-trans2.png" alt="logo" style="width: auto; height: 45px; margin-top: 3px;"></a>
 		</div>
 		
 		<div id="redes">
