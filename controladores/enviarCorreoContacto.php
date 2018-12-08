@@ -18,13 +18,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 		$headers = "From: " . $correo . "\r\n";
 		$headers .= "Reply-To: ". $correo . "\r\n";
+		$headers .= "CC: ". $correo . "\r\n";
 		$headers .= "MIME-Version: 1.0\r\n";
-		$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+		$headers .= "Content-Type: text/html; charset=utf-8\r\n";
 
-		$asunto = "Sitio Web: " . $asunto;
 
 		$message = '<html><body>';
-		$message .= '<h3>Nuevo mensaje desde <i>etiflashenmexico.com.mx</i><h3>';
+		$message .= '<h2 style="color: #0075C8;">Nuevo mensaje desde <i>etiflashenmexico.com.mx</i><h2>';
 		$message .= '<table rules="all" style="border-color: #666;" cellpadding="10">';
 		$message .= "<tr style='background: #eee;'><td><strong>Nombre:</strong> </td><td>" . $nombre . "</td></tr>";
 		$message .= "<tr><td><strong>Empresa:</strong> </td><td>" . $empresa . "</td></tr>";
@@ -35,6 +35,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		$message .= "</table>";
 		$message .= "</body></html>";
 
+
+		$asunto = "Sitio Web: " . $asunto;
 
 		// send email
 		mail("ventas@etiflashenmexico.com.mx", $asunto, $message, $headers);

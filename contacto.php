@@ -229,19 +229,21 @@
 								case '1':
 									console.log("Case 1");
 									$('#mensaje-respuesta').css('color', 'red');
-									$('#mensaje-respuesta').html('<strong>Favor de ingresar todos los datos<Strong>');
+									$('#mensaje-respuesta').html('<strong>Favor de ingresar todos los datos<strong>');
 									break;
 
 								case '2':
 									console.log("Case 2");
 									$('#mensaje-respuesta').css('color', '#45A049');
-									$('#mensaje-respuesta').html('<strong>Se ha enviado su consulta.<Strong>');
+									$('#mensaje-respuesta').html('<strong>Se ha enviado su consulta con una copia a su correo.<strong>');
 									break;
 								default:
 									console.log("Case Default");
 							}
 						}
 					});
+				} else {
+					$('#mensaje-respuesta').html('');
 				}
 			});
 		});
