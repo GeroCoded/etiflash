@@ -64,6 +64,7 @@
 				<br>
 				<span id="mensaje-respuesta"></span>
 				<br>
+				<br>
 
 				<!--<input type="checkbox" name="terminos" id="termios" value="Terminos"> <a href="javascript:void(0)" onclick="return aceptarTerminos();">Aceptar términos y condiciones</a><br><br>-->
 				
@@ -145,12 +146,9 @@
         	if(telefono===null || telefono===''){
         		mensaje += '\n        Su teléfono.';
 	            valido = false;
-        	} else if (! /^[0-9]+$/.test(telefono)) {
+        	} else if (! /^[0-9\s]+$/.test(telefono)) {
         		mensaje += '\n        Un teléfono válido.';
 	            valido = false;
-	        } else if(telefono.length != 10){
-	        	mensaje += '\n        Un teléfono de 10 dígitos';
-	        	valido = false;
 	        }
 
 	        if(comentario===null || comentario===''){
@@ -224,18 +222,23 @@
 						data: formulario,
 						success: function(data){
 							console.log("success Data: " +  data);
+
 							switch(data){
 								//case 0:
 								//	break;
-								case 1:
+								case '1':
+									console.log("Case 1");
 									$('#mensaje-respuesta').css('color', 'red');
-									$('#mensaje-respuesta').html('Favor de ingresar todos los datos');
+									$('#mensaje-respuesta').html('<strong>Favor de ingresar todos los datos<Strong>');
 									break;
 
-								case 2:
-									$('#mensaje-respuesta').css('color', 'green');
-									$('#mensaje-respuesta').html('Se ha enviado su consulta.');
+								case '2':
+									console.log("Case 2");
+									$('#mensaje-respuesta').css('color', '#45A049');
+									$('#mensaje-respuesta').html('<strong>Se ha enviado su consulta.<Strong>');
 									break;
+								default:
+									console.log("Case Default");
 							}
 						}
 					});
