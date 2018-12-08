@@ -125,7 +125,7 @@
 	        if (nombre===null || nombre===''){
 	            mensaje += '\n        Su nombre.';
 	            valido = false;
-        	} else if (! /^[a-zA-Z\s]+$/.test(nombre)) {
+        	} else if (! /^[a-zA-ZáéíóúÁÉÍÓÚ\s]+$/.test(nombre)) {
         		mensaje += '\n        Un nombre válido.';
 	            valido = false;
 			} 
