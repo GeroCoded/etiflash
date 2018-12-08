@@ -5,8 +5,9 @@
 		<article class="col-4" id="contacto">
 			<p class="titulo">Contáctanos</p>
 			<ul>
-				<li>Tel/WhatsApp:</li>
-				<li>01 777 523 8880</li>
+				<li>Teléfonos:</li>
+				<li>01 2383923224</li>
+				<li>01 2383923226</li>
 				<br>
 				<li>Correo:</li>
 				<li><a id="link-correo" title="ventas@etiflashenmexico.com.mx" href="mailto:ventas@etiflashenmexico.com.mx">
