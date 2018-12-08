@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
 		// send email
-		//mail("ventas@etiflashenmexico.com.mx", $asunto, $message, $headers);
+		mail("ventas@etiflashenmexico.com.mx", $asunto, $message, $headers);
 
 		echo 2;
 
