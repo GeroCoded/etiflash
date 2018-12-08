@@ -14,11 +14,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		$correo     = strip_tags($_POST['correo']);
 		$telefono   = strip_tags($_POST['telefono']);
 		$asunto     = strip_tags($_POST['asunto']);
-		$comentario = wordwrap(strip_tags($_POST['comentario']), 70);
+		$comentario = strip_tags($_POST['comentario']);
 
 		$headers = "From: " . $correo . "\r\n";
 		$headers .= "Reply-To: ". $correo . "\r\n";
-		$headers .= "CC: ". $correo . "\r\n";
+		//$headers .= "CC: ". $correo . "\r\n";
 		$headers .= "MIME-Version: 1.0\r\n";
 		$headers .= "Content-Type: text/html; charset=utf-8\r\n";
 

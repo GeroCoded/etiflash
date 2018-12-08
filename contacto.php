@@ -235,7 +235,7 @@
 								case '2':
 									console.log("Case 2");
 									$('#mensaje-respuesta').css('color', '#45A049');
-									$('#mensaje-respuesta').html('<strong>Se ha enviado su consulta con una copia a su correo.<strong>');
+									$('#mensaje-respuesta').html('<strong>Se ha enviado su consulta.<strong>');
 									break;
 								default:
 									console.log("Case Default");
