@@ -406,7 +406,7 @@ textarea {
 }
 
 
-input[type=submit] {
+#enviarBtn {
     background-color: #4CAF50;
     color: white;
     padding: 12px 20px;
@@ -416,7 +416,7 @@ input[type=submit] {
 }
 
 
-input[type=submit]:hover {
+#enviarBtn:hover {
     background-color: #45a049;
 }
 
@@ -425,9 +425,6 @@ input[type=submit]:hover {
 	background-color: #3D8E40;
 }
 
-#enviarBtn:enabled{
-	background-color: #4CAF50;
-}
 
 
 /* 

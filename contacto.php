@@ -40,29 +40,34 @@
 			<br>
 			<h4>O por nuestro formulario:</h4>
 			<br>
-			<form  method="POST" name="form-contacto" id="form-contacto" onsubmit="return enviar();">
+			<form  method="POST" name="form-contacto" id="form-contacto">
 				<label for="nombre">Nombre *</label>
-				<input type="text" name="nombre" id="nombre" placeholder="Nombre">
+				<input type="text"  name="nombre"   id="nombre"   placeholder="Nombre">
 				
 				<label for="empresa">Empresa *</label>
-				<input type="text" name="empresa" id="empresa" placeholder="Empresa">
+				<input type="text"  name="empresa"  id="empresa"  placeholder="Empresa">
 				
 				<label for="correo">Correo *</label>
-				<input type="email" name="correo" id="correo" placeholder="Correo">
+				<input type="email" name="correo"   id="correo"   placeholder="Correo">
 				
 				<label for="telefono">Teléfono *</label>
-				<input type="text" name="telefono" id="telefono" placeholder="Teléfono">
+				<input type="text"  name="telefono" id="telefono" placeholder="Teléfono">
+				
+				<label for="asunto">Asunto *</label>
+				<input type="text"  name="asunto" id="asunto" placeholder="Asunto">
 				
 				
 				<label for="comentario">Comentario *</label>
-				<textarea ame="comentario" id="comentario" form="contacto-form" placeholder="Comentarios..." style="height: 200px" maxlength="200"></textarea>
-				<p>Caracteres: <label for="comentario" id="contador">0</label>/200</p>
+				<textarea name="comentario" id="comentario" form="contacto-form" placeholder="Comentarios..." style="height: 200px" maxlength="750"></textarea>
+				<p>Caracteres: <label for="comentario" id="contador">0</label>/750</p>
 
-				<br><br>
+				<br>
+				<span id="mensaje-respuesta"></span>
+				<br>
 
-				<input type="checkbox" name="terminos" id="termios" value="Terminos"> <a href="javascript:void(0)" onclick="return aceptarTerminos();">Aceptar términos y condiciones</a><br><br>
+				<!--<input type="checkbox" name="terminos" id="termios" value="Terminos"> <a href="javascript:void(0)" onclick="return aceptarTerminos();">Aceptar términos y condiciones</a><br><br>-->
 				
-				<input type="submit" name="enviarBtn" id="enviarBtn" value="Enviar" disabled="true">
+				<input type="button" name="enviarBtn" id="enviarBtn" value="Enviar">
 			</form>
 		</section>
 
@@ -93,10 +98,15 @@
 
 
 	<?php include('includes/footer.php'); ?>
+ 
+
+    <!-- JQUERY -->
+    <!-- TODO: Cambiar los assets a una carpeta de Etiflash y no una de DYMO -->
+    <script src="dymo/assets/js/jquery-3.3.1.js"></script>
 
 	<script type="application/javascript">
 
-		document.forms['form-contacto'].onsubmit = enviar;
+		//document.forms['form-contacto'].onsubmit = enviar;
 
 		function enviar(){
 
@@ -165,11 +175,11 @@
 
 		//		- - - - TÉRMINOS DE ACEPTACIÓN - - - - 
 		// Obtención del checkbox y el botón de enviar
-		var terminos = document.getElementById('terminos');
-		var enviarBtn = document.getElementById('enviarBtn');
+		//var terminos = document.getElementById('terminos');
+		//var enviarBtn = document.getElementById('enviarBtn');
 
 		// Link para el label "Aceptar términos y condiciones."
-		function aceptarTerminos(){
+		/*function aceptarTerminos(){
 
 			if(terminos.checked){
 				terminos.checked = false;
@@ -180,14 +190,50 @@
 		 	enviarBtn.disabled = !terminos.checked;
 
 			return false;
-		}
+		}*/
 
 		// Funcion para deshabilitar el botón de enviar dependiendo del estado del checkbox.
-		terminos.onchange = function() {
+		/*terminos.onchange = function() {
 		  enviarBtn.disabled = !this.checked;
-		};
+		};*/
 
 	</script>
 	
+
+	<!-- Script para enviar el formulario por correo -->
+	<script>
+
+		$(document).ready(function(){
+			$('#enviarBtn').on('click', function(){
+				if(enviar()){
+
+
+					var formulario = $('#form-contacto').serialize();
+
+					$.ajax({
+						type: 'POST',
+						url: 'controladores/enviarCorreoContacto.php',
+						data: formulario,
+						success: function(data){
+							switch(data){
+								//case 0:
+								//	break;
+								case 1:
+									$('#mensaje-respuesta').css('color', 'red');
+									$('#mensaje-respuesta').html('Favor de ingresar todos los datos');
+									break;
+
+								case 2:
+									$('#mensaje-respuesta').css('color', 'green');
+									$('#mensaje-respuesta').html('Se ha enviado su consulta.');
+									break;
+							}
+						}
+					});
+				}
+			});
+		});
+		
+	</script>
 </body>
 </html>
