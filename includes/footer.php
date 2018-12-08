@@ -5,7 +5,7 @@
 		<article class="col-4" id="contacto">
 			<p class="titulo">Contáctanos</p>
 			<ul>
-				<li>(777) 523-8880</li>
+				<li>Tel/WhatsApp: 01 777 523 8880</li>
 			</ul>
 		</article>
 

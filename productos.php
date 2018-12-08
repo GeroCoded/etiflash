@@ -17,7 +17,7 @@
 		    <!--<div class="text">ENGRAPADORA ST-9000</div>-->
 		  </div>
 
-		  <h3 >Engrapadora Flash ST-9000</h3>
+		  <h3 >Engrapadora FLASH ST-9000</h3>
 
 <!--
 		  <div class="mySlides fade">
@@ -68,7 +68,7 @@
 		</div>
 		<div class="producto-circulo">
 			<a href="#etiquetadoras.php"><img src="images/etiquetadora-roja-circulo.png"></a>
-			<p>Etiquetadora</p>
+			<p>Etiquetadoras</p>
 		</div>
 		<div class="producto-circulo">
 			<a href="#lectores.php"><img src="images/lector-codigo-barras-circulo.png"></a>
@@ -79,11 +79,11 @@
 
 		<div class="producto-circulo">
 			<a href="#etiquetas-termica.php"><img src="images/etiqueta-termica-circulo.png"></a>
-			<p>Etiqueta térmica</p>
+			<p>Etiquetas</p>
 		</div>
 		<div class="producto-circulo">
 			<a href="#plastiflechas.php"><img src="images/pistola-plastiflecha-circulo.png"></a>
-			<p>Pistola de plastiflecha</p>
+			<p>Pistolas plastiflecha</p>
 		</div>
 
 		<br>

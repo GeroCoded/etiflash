@@ -89,6 +89,12 @@ ul {
 	font-family: Roboto-LightItalic;
 }
 
+.titulo-detalles {
+	font-size: 18px;
+	color: #666666;
+	font-family: Roboto-LightItalic;
+}
+
 
 /* 
 === === === === === === === === === === === === === === === === === === === === === === === ===
@@ -134,13 +140,15 @@ header {
 }
 
 header #logo {
-	padding-top: 15px;
+	padding-top: 25px;
 	padding-left: 20px;
 	float: left;
 }
 
 header #logo img {
-	width: 80px;
+	width: auto; 
+	height: 60px; 
+	margin-top: 3px;
 }
 
 header #redes {
@@ -148,6 +156,15 @@ header #redes {
 	float: right;
 	margin-top: 35px;
 }
+
+
+header #redes #siguenos{
+	color: white;
+	margin-bottom: 10px;
+	text-align: center;
+	padding-left: 20px;
+}
+
 
 header #redes a{
 	padding-left: 20px;
@@ -327,6 +344,13 @@ header nav li a:hover {
 .mapa-otras-sucursales{
 	width: 100%;
 	height: 300px;
+}
+
+.titulo-detalles a {
+	color: black !important;
+	text-decoration: none !important;
+	font-weight: bold;
+	margin-top: 15px !important;
 }
 
 
@@ -569,7 +593,7 @@ footer #diseñador {
 
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 620px) {
 
 	h1 {
 		font-size: 1.50em;
@@ -598,9 +622,6 @@ footer #diseñador {
 		width: 100%;
 	}
 
-	header #logo img {
-		width: 80px;
-	}
 
 	header #redes {
 		width: 100%;
@@ -737,6 +758,11 @@ footer #diseñador {
 	    font-weight: 700;
 	}
 
+
+	header #logo img {
+		width: auto; 
+		height: 40px; 
+	}
 
 	header #redes a{
 		margin-bottom: 10px;

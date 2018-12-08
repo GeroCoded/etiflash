@@ -69,6 +69,15 @@
 				<iframe class="mapa-otras-sucursales" src="https://maps.google.com/maps?q=Coyuya%20199%2C%20La%20Cruz%20Coyuya%2C%2008310%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX&t=&z=17&ie=UTF8&iwloc=&output=embed" 
 						frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
 
+				<br><br>
+
+				<span class="titulo-detalles"><a href="http://dymo.etiflashenmexico.com.mx/">Página web</a></span><br><br>
+				<span class="titulo-detalles">Teléfono</span> <br>
+				<span class="titulo-detalles">(55) 5650-2369</span> <br>
+				<span class="titulo-detalles">(55) 5654-1001</span> <br>
+				<span class="titulo-detalles">(55) 5657-6210</span> <br>
+				<span class="titulo-detalles">(55) 5650-2873</span> <br>
+
 			</article>
 		</aside>
 	</section>

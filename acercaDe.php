@@ -20,7 +20,7 @@
 
 
 
-		<h1>ACERCA DE</h1>
+		<h1>ACERCA DE<br>NOSOTROS</h1>
 
 		<br><br>
 
@@ -28,7 +28,7 @@
 
 		<article class="row">
 
-			<div class="acerca-de-titulo col-4">Historia de la empresa</div>
+			<div class="acerca-de-titulo col-4">Historia de la Empresa</div>
 
 			<div class="acerca-de-parrafo col-8">
 
