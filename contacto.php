@@ -58,7 +58,7 @@
 				
 				
 				<label for="comentario">Comentario *</label>
-				<textarea name="comentario" id="comentario" form="contacto-form" placeholder="Comentarios..." style="height: 200px" maxlength="750"></textarea>
+				<textarea name="comentario" id="comentario" form="form-contacto" placeholder="Comentarios..." style="height: 200px" maxlength="750"></textarea>
 				<p>Caracteres: <label for="comentario" id="contador">0</label>/750</p>
 
 				<br>
@@ -161,6 +161,8 @@
 			if(valido===false){
 				alert(mensaje);
 				return false;
+			} else {
+				return true;
 			}
 		}
 
@@ -205,16 +207,23 @@
 
 		$(document).ready(function(){
 			$('#enviarBtn').on('click', function(){
+				console.log("onclick");
 				if(enviar()){
+
+					console.log("ajax");
 
 
 					var formulario = $('#form-contacto').serialize();
+
+					console.log("Formulario");
+					console.log(formulario);
 
 					$.ajax({
 						type: 'POST',
 						url: 'controladores/enviarCorreoContacto.php',
 						data: formulario,
 						success: function(data){
+							console.log("success Data: " +  data);
 							switch(data){
 								//case 0:
 								//	break;
