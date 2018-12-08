@@ -226,6 +226,13 @@
 								case '2':
 									$('#mensaje-respuesta').css('color', '#45A049');
 									$('#mensaje-respuesta').html('<strong>Se ha enviado su consulta.<strong>');
+
+									$('#nombre').val('');
+									$('#empresa').val('');
+									$('#correo').val('');
+									$('#telefono').val('');
+									$('#asunto').val('');
+									$('#comentario').val('');
 									break;
 							}
 						}
