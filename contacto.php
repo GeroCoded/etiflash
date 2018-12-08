@@ -32,6 +32,14 @@
 	<section class="centered row">
 		<section id="section-form-contacto" class="col-7">
 			<h1>Contáctanos</h1>
+			<h4>Por correo: 
+				<a id="link-correo" title="ventas@etiflashenmexico.com.mx" href="mailto:ventas@etiflashenmexico.com.mx">
+					ventas@etiflashenmexico.com.mx
+				</a>
+			</h4>
+			<br>
+			<h4>O por nuestro formulario:</h4>
+			<br>
 			<form  method="POST" name="form-contacto" id="form-contacto" onsubmit="return enviar();">
 				<label for="nombre">Nombre *</label>
 				<input type="text" name="nombre" id="nombre" placeholder="Nombre">

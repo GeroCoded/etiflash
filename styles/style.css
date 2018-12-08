@@ -371,6 +371,17 @@ header nav li a:hover {
 	width: 90%;
 }
 
+#section-form-contacto #link-correo {
+	color: blue !important;
+	text-decoration: none !important;
+	font-weight: bold;
+	margin-top: 15px !important;
+}
+
+#section-form-contacto h4 {
+	text-align: center;
+}
+
 
 /* 
 		 				=== === === === === === === === === === === === ===
