@@ -14,7 +14,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		$correo     = strip_tags($_POST['correo']);
 		$telefono   = strip_tags($_POST['telefono']);
 		$asunto     = strip_tags($_POST['asunto']);
-		$comentario = strip_tags($_POST['comentario']);
+
+		$comentario = wordwrap(strip_tags($_POST['comentario']), 70);
+
 
 		$headers = "From: " . $correo . "\r\n";
 		$headers .= "Reply-To: ". $correo . "\r\n";
@@ -31,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		$message .= "<tr><td><strong>Correo:</strong> </td><td>" . $correo . "</td></tr>";
 		$message .= "<tr><td><strong>Teléfono:</strong> </td><td>" . $telefono . "</td></tr>";
 		$message .= "<tr><td><strong>Asunto:</strong> </td><td>" . $asunto . "</td></tr>";
-		$message .= "<tr><td><strong>Comentario:</strong> </td><td>" . $comentario . "</td></tr>";
+		$message .= "<tr><td><strong>Comentario:</strong> </td><td style='white-space:pre;'>" . $comentario . "</td></tr>";
 		$message .= "</table>";
 		$message .= "</body></html>";
 

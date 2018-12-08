@@ -205,40 +205,28 @@
 
 		$(document).ready(function(){
 			$('#enviarBtn').on('click', function(){
-				console.log("onclick");
+
 				if(enviar()){
 
-					console.log("ajax");
-
-
 					var formulario = $('#form-contacto').serialize();
-
-					console.log("Formulario");
-					console.log(formulario);
 
 					$.ajax({
 						type: 'POST',
 						url: 'controladores/enviarCorreoContacto.php',
 						data: formulario,
 						success: function(data){
-							console.log("success Data: " +  data);
+							
 
 							switch(data){
-								//case 0:
-								//	break;
 								case '1':
-									console.log("Case 1");
 									$('#mensaje-respuesta').css('color', 'red');
 									$('#mensaje-respuesta').html('<strong>Favor de ingresar todos los datos<strong>');
 									break;
 
 								case '2':
-									console.log("Case 2");
 									$('#mensaje-respuesta').css('color', '#45A049');
 									$('#mensaje-respuesta').html('<strong>Se ha enviado su consulta.<strong>');
 									break;
-								default:
-									console.log("Case Default");
 							}
 						}
 					});
