@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		$asunto = "Sitio Web: " . $asunto;
 
 		// send email
-//		mail("ventas@etiflashenmexico.com.mx", $asunto, $message, $headers);
+		mail("ventas@etiflashenmexico.com.mx", $asunto, $message, $headers);
 
 		echo 2;
 
