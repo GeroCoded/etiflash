@@ -10,6 +10,31 @@
 
 <body>
 
+
+	<!-- FACEBOOK CHAT -->
+
+	<!-- Load Facebook SDK for JavaScript -->
+	<div id="fb-root"></div>
+	<script>
+		(function(d, s, id) {
+		  	var js, fjs = d.getElementsByTagName(s)[0];
+		  	if (d.getElementById(id)) return;
+		  	js = d.createElement(s); js.id = id;
+		  	js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+		  	fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+
+	<!-- Your customer chat code -->
+	<div class="fb-customerchat"
+	  	attribution=install_email
+	  	page_id="202339923221842"
+	  	logged_in_greeting="¡Hola! ¿Cómo puedo ayudarte?"
+	  	logged_out_greeting="¡Hola! ¿Cómo puedo ayudarte?">
+	</div>
+
+
+
 	<?php include('includes/header.php'); ?>
 
 
@@ -27,9 +52,7 @@
 
 
 		<article class="row">
-
 			<div class="acerca-de-titulo col-4">Historia de la Empresa</div>
-
 			<div class="acerca-de-parrafo col-8">
 
 				Distribuidora y Mayorista Omega S.A. de C.V. fue fundada el 17 de 
@@ -43,7 +66,6 @@
 				diferentes tipos de etiquetas y en mayor cantidad.
 
 			</div>
-
 		</article>
 
 
@@ -53,9 +75,7 @@
 
 
 		<article class="row">
-
 			<div class="acerca-de-titulo col-4">Misión</div>
-
 			<div class="acerca-de-parrafo col-8">
 
 				En Distribuidora y Mayorista Omega, con más de 30 años de experiencia, nos dedicamos a brindarles a nuestros
@@ -65,7 +85,6 @@
 				y servicios confiables con un enfoque orientado al cliente.
 
 			</div>
-
 		</article>
 
 
@@ -75,9 +94,7 @@
 
 
 		<article class="row">
-
 			<div class="acerca-de-titulo col-4">Visión</div>
-
 			<div class="acerca-de-parrafo col-8">
 
 				Nuestra visión es ser la empresa de equipos y servicios más admirada por la calidad
@@ -85,7 +102,6 @@
 				de productos que representa y el soporte técnico brindado a nuestros clientes.
 
 			</div>
-
 		</article>
 
 
