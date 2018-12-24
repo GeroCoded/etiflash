@@ -10,9 +10,11 @@
 				<li>01 2383923226</li>
 				<br>
 				<li>Correo:</li>
-				<li><a id="link-correo" title="ventas@etiflashenmexico.com.mx" href="mailto:ventas@etiflashenmexico.com.mx">
-					ventas@etiflashenmexico.com.mx
-				</a></li>
+				<li>
+					<a id="link-correo" title="ventas@etiflashenmexico.com.mx" href="mailto:ventas@etiflashenmexico.com.mx">
+						ventas@etiflashenmexico.com.mx
+					</a>
+				</li>
 				<br>
 			</ul>
 		</article>
