@@ -24,6 +24,7 @@
 			<p>Vicente Suárez 813, Niños Héroes, 75760 Tehuacán, Puebla.</p>
 		</article>
 
+
 		<article class="col-4" id="redes">
 			<p class="titulo">Redes sociales</p>
 			<p><a href="#Facebook">Facebook</a></p>
