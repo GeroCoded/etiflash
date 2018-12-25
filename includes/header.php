@@ -4,6 +4,11 @@
 			<a href="index.php"><img id="etiflash-logo-trans" src="images/etiflash-logo-trans2.png" alt="logo"></a>
 		</div>
 		
+
+
+
+
+		
 		<div id="redes">
 			<div>
 				<h3 id="siguenos">SÍGUENOS</h3>
