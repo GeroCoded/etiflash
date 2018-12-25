@@ -24,6 +24,7 @@
 		<h1>Ubicación</h1>
 
 		<p class="titulo-comentario">Vicente Suárez 813, Niños Héroes, 75760 Tehuacán, Puebla.</p><br>
+		<p class="titulo-comentario">Télefonos: 01 2383923224 / 01 2383923226 </p><br>
 
 		<article class="mapa">
 
