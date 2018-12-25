@@ -16,7 +16,7 @@
 			<div >
 				<!-- <a href="">Facebook</a>
 				<a href="">Instagram</a> -->
-				<a id="fb" href="#Facebook"><img id="fb-icon2" src="images/fb-icon2.png"/></a>
+				<a id="fb" href="https://www.facebook.com/EtiflashenMexico/"><img id="fb-icon2" src="images/fb-icon2.png"/></a>
 				<a id="youtube" href="#YouTube"><img id="fb-icon2" src="images/youtube-icon2.png"/></a>
 				<a id="instagram" href="#Instagram"><img id="instagram-icon2" src="images/instagram-icon2.png"/></a>
 				<a id="twitter" href="#Twitter"><img id="twitter-icon2" src="images/twitter-icon2.png"/></a>
