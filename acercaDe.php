@@ -32,7 +32,7 @@
 			<div class="acerca-de-titulo col-4">Historia de la Empresa</div>
 			<div class="acerca-de-parrafo col-8">
 
-				Distribuidora y Mayorista Omega S.A. de C.V. fue fundada el 17 de 
+				Etiflash S.A. de C.V. fue fundada el 17 de 
 
 				Septiembre de 1986 para el sector industrial con el fin de hacer y distribuir etiquetas y 
 
@@ -55,7 +55,7 @@
 			<div class="acerca-de-titulo col-4">Misión</div>
 			<div class="acerca-de-parrafo col-8">
 
-				En Distribuidora y Mayorista Omega, con más de 30 años de experiencia, nos dedicamos a brindarles a nuestros
+				En Etiflash S.A. de C.V., con más de 30 años de experiencia, nos dedicamos a brindarles a nuestros
 
 				clientes un servicio cordial. Valoramos su negocio. Nuestra misión es ofrecer productos 
 

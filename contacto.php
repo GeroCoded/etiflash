@@ -103,7 +103,7 @@
 				<br><br>
 
 				<span class="titulo-detalles"><a href="http://dymo.etiflashenmexico.com.mx/">Página web</a></span><br><br>
-				<span class="titulo-detalles">Teléfono</span> <br>
+				<span class="titulo-detalles">Teléfonos</span> <br>
 				<span class="titulo-detalles">(55) 5650-2369</span> <br>
 				<span class="titulo-detalles">(55) 5654-1001</span> <br>
 				<span class="titulo-detalles">(55) 5657-6210</span> <br>

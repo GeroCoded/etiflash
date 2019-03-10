@@ -27,7 +27,7 @@
 
 		<article class="col-4" id="redes">
 			<p class="titulo">Redes sociales</p>
-			<p><a href="#Facebook">Facebook</a></p>
+			<p><a href="https://www.facebook.com/EtiflashenMexico/">Facebook</a></p>
 			<p><a href="#YouTube">YouTube</a></p>
 			<p><a href="#Instagram">Instagram</a></p>
 			<p><a href="#Twitter">Twitter</a></p>
