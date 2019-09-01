@@ -313,6 +313,7 @@
 									$('#telefono').val('');
 									$('#asunto').val('');
 									$('#comentario').val('');
+									$('#contador').val('0');
 									break;
 							}
 						}
